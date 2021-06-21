@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210619 23:45:29.859" schemaversion="2" generator="Robot 4.0.1 (Python 2.7.17 on linux2)">
+<suite source="/home/julo_pool0096/tiket/TestSuite/suite.robot" id="s1" name="Suite">
+<test id="s1-t1" name="open Browser">
+<kw name="open tiket.com">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210619 23:45:30.054" level="INFO">Opening browser 'Chrome' to base url 'https://tiket.com'.</msg>
+<status status="PASS" endtime="20210619 23:45:35.715" starttime="20210619 23:45:30.054"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20210619 23:45:36.042" starttime="20210619 23:45:35.716"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:36.042" starttime="20210619 23:45:30.053"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:36.043" starttime="20210619 23:45:30.050"/>
+</test>
+<test id="s1-t2" name="click Hotel">
+<kw name="user click ikonhotel" library="testHotel">
+<kw name="click ikonhotel" library="homepage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ikonhotel}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210619 23:45:36.054" level="INFO">Clicking element 'xpath://span[contains(text(),'Hotel')]'.</msg>
+<status status="PASS" endtime="20210619 23:45:39.248" starttime="20210619 23:45:36.052"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:39.249" starttime="20210619 23:45:36.051"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:39.249" starttime="20210619 23:45:36.049"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:39.250" starttime="20210619 23:45:36.046"/>
+</test>
+<test id="s1-t3" name="click Destination">
+<kw name="user click destination" library="testHotel">
+<kw name="click destination" library="homepage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${tujuan}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20210619 23:45:39.956" starttime="20210619 23:45:39.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${tujuan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210619 23:45:39.958" level="INFO">Clicking element 'id:destination-input'.</msg>
+<status status="PASS" endtime="20210619 23:45:42.026" starttime="20210619 23:45:39.956"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${jakarta}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210619 23:45:42.028" level="INFO">Clicking element 'xpath://*[contains(text(),'Jakarta')]'.</msg>
+<status status="PASS" endtime="20210619 23:45:42.665" starttime="20210619 23:45:42.027"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:42.666" starttime="20210619 23:45:39.259"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:42.666" starttime="20210619 23:45:39.258"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:42.670" starttime="20210619 23:45:39.253"/>
+</test>
+<test id="s1-t4" name="click DateCheckin">
+<kw name="user click dateCheckin" library="testHotel">
+<kw name="click dateCheckin" library="homepage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${checkin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210619 23:45:42.693" level="INFO">Clicking element 'id:date-input-startdate'.</msg>
+<status status="PASS" endtime="20210619 23:45:43.026" starttime="20210619 23:45:42.691"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${date}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210619 23:45:43.027" level="INFO">Clicking element 'xpath://div[@id='checkinDate']//div[@role='dialog']//div[@class='content']//div[@class='popup-content']//div[@class='date-range-popup-container']//div[contains(@class,'range-picker start')]//div//div[@aria-label='Mon Jul 19 2021']//div[contains(@class,'day-mod-body')][normalize-space()='19']'.</msg>
+<status status="PASS" endtime="20210619 23:45:43.338" starttime="20210619 23:45:43.026"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:43.339" starttime="20210619 23:45:42.683"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:43.339" starttime="20210619 23:45:42.682"/>
+</kw>
+<status status="PASS" endtime="20210619 23:45:43.340" starttime="20210619 23:45:42.676"/>
+</test>
+<status status="PASS" endtime="20210619 23:45:43.344" starttime="20210619 23:45:29.861"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Suite" pass="4">Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
