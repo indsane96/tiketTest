@@ -19,3 +19,11 @@ click Destination
     user click destination
 click DateCheckin
     user click dateCheckin
+click AddGuest
+    user click addGuest
+click FindHotel
+    user click findHotel
+click FilterBreakfast
+    user click filterBreakfast
+click ChosenHotel
+    user click chosenHotel
