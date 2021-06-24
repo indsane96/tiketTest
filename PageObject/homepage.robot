@@ -16,7 +16,7 @@ ${breakfast}       xpath://body/div[@id='app']/main/div[@class='hotel-search-lis
 ${villa}           xpath://*[contains(text(),'Villa')]
 ${applyFilter}     xpath://*[contains(text(),'Terapkan')]
 ${hotel}           xpath://*[contains(text(),'The Apurva Kempinski Bali')]
-${room}            xpath:
+
 
 
 *** Keywords ***
